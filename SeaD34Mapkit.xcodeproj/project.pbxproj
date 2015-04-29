@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE0159101AF07F2D0072AA88 /* ImageResizer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01590F1AF07F2D0072AA88 /* ImageResizer.m */; };
+		CE0159131AF080EF0072AA88 /* GoogleMapsService.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0159121AF080EF0072AA88 /* GoogleMapsService.m */; };
+		CEDCD70A1AEEFE420004CE01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDCD7091AEEFE420004CE01 /* main.m */; };
+		CEDCD70D1AEEFE420004CE01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDCD70C1AEEFE420004CE01 /* AppDelegate.m */; };
+		CEDCD7131AEEFE420004CE01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDCD7111AEEFE420004CE01 /* Main.storyboard */; };
+		CEDCD7151AEEFE420004CE01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDCD7141AEEFE420004CE01 /* Images.xcassets */; };
+		CEDCD7181AEEFE420004CE01 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDCD7161AEEFE420004CE01 /* LaunchScreen.xib */; };
+		CEDCD7241AEEFE430004CE01 /* SeaD34MapkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDCD7231AEEFE430004CE01 /* SeaD34MapkitTests.m */; };
+		CEDCD72E1AEEFE4D0004CE01 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDCD72D1AEEFE4D0004CE01 /* MapKit.framework */; };
+		CEDCD7341AEEFFAD0004CE01 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDCD7331AEEFFAD0004CE01 /* MapViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEDCD71E1AEEFE430004CE01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDCD6FC1AEEFE420004CE01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEDCD7031AEEFE420004CE01;
+			remoteInfo = SeaD34Mapkit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE01590E1AF07F2D0072AA88 /* ImageResizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageResizer.h; sourceTree = "<group>"; };
+		CE01590F1AF07F2D0072AA88 /* ImageResizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageResizer.m; sourceTree = "<group>"; };
+		CE0159111AF080EF0072AA88 /* GoogleMapsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleMapsService.h; sourceTree = "<group>"; };
+		CE0159121AF080EF0072AA88 /* GoogleMapsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsService.m; sourceTree = "<group>"; };
+		CEDCD7041AEEFE420004CE01 /* SeaD34Mapkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeaD34Mapkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDCD7081AEEFE420004CE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDCD7091AEEFE420004CE01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEDCD70B1AEEFE420004CE01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEDCD70C1AEEFE420004CE01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEDCD7121AEEFE420004CE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEDCD7141AEEFE420004CE01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CEDCD7171AEEFE420004CE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CEDCD71D1AEEFE430004CE01 /* SeaD34MapkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeaD34MapkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDCD7221AEEFE430004CE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDCD7231AEEFE430004CE01 /* SeaD34MapkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeaD34MapkitTests.m; sourceTree = "<group>"; };
+		CEDCD72D1AEEFE4D0004CE01 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CEDCD7321AEEFFAD0004CE01 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		CEDCD7331AEEFFAD0004CE01 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEDCD7011AEEFE420004CE01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDCD72E1AEEFE4D0004CE01 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDCD71A1AEEFE430004CE01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE01590A1AF078AB0072AA88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE0159111AF080EF0072AA88 /* GoogleMapsService.h */,
+				CE0159121AF080EF0072AA88 /* GoogleMapsService.m */,
+				CE01590E1AF07F2D0072AA88 /* ImageResizer.h */,
+				CE01590F1AF07F2D0072AA88 /* ImageResizer.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CEDCD6FB1AEEFE420004CE01 = {
+			isa = PBXGroup;
+			children = (
+				CEDCD72D1AEEFE4D0004CE01 /* MapKit.framework */,
+				CEDCD7061AEEFE420004CE01 /* SeaD34Mapkit */,
+				CEDCD7201AEEFE430004CE01 /* SeaD34MapkitTests */,
+				CEDCD7051AEEFE420004CE01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEDCD7051AEEFE420004CE01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEDCD7041AEEFE420004CE01 /* SeaD34Mapkit.app */,
+				CEDCD71D1AEEFE430004CE01 /* SeaD34MapkitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEDCD7061AEEFE420004CE01 /* SeaD34Mapkit */ = {
+			isa = PBXGroup;
+			children = (
+				CEDCD7111AEEFE420004CE01 /* Main.storyboard */,
+				CEDCD70B1AEEFE420004CE01 /* AppDelegate.h */,
+				CEDCD70C1AEEFE420004CE01 /* AppDelegate.m */,
+				CEDCD7351AEEFFBE0004CE01 /* ViewControllers */,
+				CE01590A1AF078AB0072AA88 /* Models */,
+				CEDCD7141AEEFE420004CE01 /* Images.xcassets */,
+				CEDCD7161AEEFE420004CE01 /* LaunchScreen.xib */,
+				CEDCD7071AEEFE420004CE01 /* Supporting Files */,
+			);
+			path = SeaD34Mapkit;
+			sourceTree = "<group>";
+		};
+		CEDCD7071AEEFE420004CE01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEDCD7081AEEFE420004CE01 /* Info.plist */,
+				CEDCD7091AEEFE420004CE01 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEDCD7201AEEFE430004CE01 /* SeaD34MapkitTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEDCD7231AEEFE430004CE01 /* SeaD34MapkitTests.m */,
+				CEDCD7211AEEFE430004CE01 /* Supporting Files */,
+			);
+			path = SeaD34MapkitTests;
+			sourceTree = "<group>";
+		};
+		CEDCD7211AEEFE430004CE01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEDCD7221AEEFE430004CE01 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEDCD7351AEEFFBE0004CE01 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEDCD7321AEEFFAD0004CE01 /* MapViewController.h */,
+				CEDCD7331AEEFFAD0004CE01 /* MapViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEDCD7031AEEFE420004CE01 /* SeaD34Mapkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDCD7271AEEFE430004CE01 /* Build configuration list for PBXNativeTarget "SeaD34Mapkit" */;
+			buildPhases = (
+				CEDCD7001AEEFE420004CE01 /* Sources */,
+				CEDCD7011AEEFE420004CE01 /* Frameworks */,
+				CEDCD7021AEEFE420004CE01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeaD34Mapkit;
+			productName = SeaD34Mapkit;
+			productReference = CEDCD7041AEEFE420004CE01 /* SeaD34Mapkit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEDCD71C1AEEFE430004CE01 /* SeaD34MapkitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDCD72A1AEEFE430004CE01 /* Build configuration list for PBXNativeTarget "SeaD34MapkitTests" */;
+			buildPhases = (
+				CEDCD7191AEEFE430004CE01 /* Sources */,
+				CEDCD71A1AEEFE430004CE01 /* Frameworks */,
+				CEDCD71B1AEEFE430004CE01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEDCD71F1AEEFE430004CE01 /* PBXTargetDependency */,
+			);
+			name = SeaD34MapkitTests;
+			productName = SeaD34MapkitTests;
+			productReference = CEDCD71D1AEEFE430004CE01 /* SeaD34MapkitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEDCD6FC1AEEFE420004CE01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Craig_Chaillie;
+				TargetAttributes = {
+					CEDCD7031AEEFE420004CE01 = {
+						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					CEDCD71C1AEEFE430004CE01 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = CEDCD7031AEEFE420004CE01;
+					};
+				};
+			};
+			buildConfigurationList = CEDCD6FF1AEEFE420004CE01 /* Build configuration list for PBXProject "SeaD34Mapkit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEDCD6FB1AEEFE420004CE01;
+			productRefGroup = CEDCD7051AEEFE420004CE01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEDCD7031AEEFE420004CE01 /* SeaD34Mapkit */,
+				CEDCD71C1AEEFE430004CE01 /* SeaD34MapkitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEDCD7021AEEFE420004CE01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDCD7131AEEFE420004CE01 /* Main.storyboard in Resources */,
+				CEDCD7181AEEFE420004CE01 /* LaunchScreen.xib in Resources */,
+				CEDCD7151AEEFE420004CE01 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDCD71B1AEEFE430004CE01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEDCD7001AEEFE420004CE01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0159101AF07F2D0072AA88 /* ImageResizer.m in Sources */,
+				CE0159131AF080EF0072AA88 /* GoogleMapsService.m in Sources */,
+				CEDCD7341AEEFFAD0004CE01 /* MapViewController.m in Sources */,
+				CEDCD70D1AEEFE420004CE01 /* AppDelegate.m in Sources */,
+				CEDCD70A1AEEFE420004CE01 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDCD7191AEEFE430004CE01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDCD7241AEEFE430004CE01 /* SeaD34MapkitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEDCD71F1AEEFE430004CE01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEDCD7031AEEFE420004CE01 /* SeaD34Mapkit */;
+			targetProxy = CEDCD71E1AEEFE430004CE01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEDCD7111AEEFE420004CE01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEDCD7121AEEFE420004CE01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEDCD7161AEEFE420004CE01 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEDCD7171AEEFE420004CE01 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEDCD7251AEEFE430004CE01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEDCD7261AEEFE430004CE01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEDCD7281AEEFE430004CE01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SeaD34Mapkit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEDCD7291AEEFE430004CE01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SeaD34Mapkit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CEDCD72B1AEEFE430004CE01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SeaD34MapkitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeaD34Mapkit.app/SeaD34Mapkit";
+			};
+			name = Debug;
+		};
+		CEDCD72C1AEEFE430004CE01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SeaD34MapkitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeaD34Mapkit.app/SeaD34Mapkit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEDCD6FF1AEEFE420004CE01 /* Build configuration list for PBXProject "SeaD34Mapkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDCD7251AEEFE430004CE01 /* Debug */,
+				CEDCD7261AEEFE430004CE01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDCD7271AEEFE430004CE01 /* Build configuration list for PBXNativeTarget "SeaD34Mapkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDCD7281AEEFE430004CE01 /* Debug */,
+				CEDCD7291AEEFE430004CE01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDCD72A1AEEFE430004CE01 /* Build configuration list for PBXNativeTarget "SeaD34MapkitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDCD72B1AEEFE430004CE01 /* Debug */,
+				CEDCD72C1AEEFE430004CE01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEDCD6FC1AEEFE420004CE01 /* Project object */;
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iaL-CZ-JLf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXu-vP-V79">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Display Type" id="1Bh-zN-Qed">
+                                        <connections>
+                                            <action selector="changeDisplay:" destination="BYZ-38-t0r" id="d9c-5i-Svl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="TcB-j7-nWd"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="AoX-dC-OQu"/>
+                                    <barButtonItem title="Labyrinth" id="OdU-Dv-QoD">
+                                        <connections>
+                                            <action selector="location1Pressed:" destination="BYZ-38-t0r" id="ThK-vf-X4t"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="WS2-83-oMz"/>
+                                    <barButtonItem title="Heart" id="Esy-v0-b0U">
+                                        <connections>
+                                            <action selector="location2Pressed:" destination="BYZ-38-t0r" id="1a6-tb-Dgd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gjl-dx-iOT"/>
+                                    <barButtonItem title="Tortuga" id="wfq-Ys-zvK">
+                                        <connections>
+                                            <action selector="location3Pressed:" destination="BYZ-38-t0r" id="lFb-2R-c7C"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bXu-vP-V79" secondAttribute="bottom" id="2Vk-Pa-98g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iaL-CZ-JLf" secondAttribute="trailing" constant="-16" id="3kD-FD-R60"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bXu-vP-V79" secondAttribute="trailing" constant="-16" id="5lD-yf-PcL"/>
+                            <constraint firstItem="iaL-CZ-JLf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="UXx-yN-yML"/>
+                            <constraint firstItem="bXu-vP-V79" firstAttribute="top" secondItem="iaL-CZ-JLf" secondAttribute="bottom" id="UvF-1P-GFR"/>
+                            <constraint firstItem="iaL-CZ-JLf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="lzY-aK-z2s"/>
+                            <constraint firstItem="bXu-vP-V79" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="xWJ-N2-hK3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iaL-CZ-JLf" secondAttribute="bottom" id="xdM-UZ-IQx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xdM-UZ-IQx"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="iaL-CZ-JLf" id="SVX-TZ-rcD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
