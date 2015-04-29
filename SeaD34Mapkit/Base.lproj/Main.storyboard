@@ -69,10 +69,29 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="iaL-CZ-JLf" id="SVX-TZ-rcD"/>
+                        <segue destination="3xn-eb-Ycb" kind="presentation" identifier="ReminderDetailSegue" id="E2S-HP-r3h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Add Reminder Detail View Controller-->
+        <scene sceneID="Lt5-eq-BI8">
+            <objects>
+                <viewController id="3xn-eb-Ycb" customClass="AddReminderDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7MZ-hu-vA1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qk3-2F-OfJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="udF-uL-W3R">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XD1-un-oOR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1131" y="259"/>
         </scene>
     </scenes>
 </document>

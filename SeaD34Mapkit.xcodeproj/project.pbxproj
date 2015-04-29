@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE0159101AF07F2D0072AA88 /* ImageResizer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01590F1AF07F2D0072AA88 /* ImageResizer.m */; };
 		CE0159131AF080EF0072AA88 /* GoogleMapsService.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0159121AF080EF0072AA88 /* GoogleMapsService.m */; };
+		CE44170C1AF15E67007B461F /* AddReminderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE44170B1AF15E67007B461F /* AddReminderDetailViewController.m */; };
 		CEDCD70A1AEEFE420004CE01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDCD7091AEEFE420004CE01 /* main.m */; };
 		CEDCD70D1AEEFE420004CE01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDCD70C1AEEFE420004CE01 /* AppDelegate.m */; };
 		CEDCD7131AEEFE420004CE01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDCD7111AEEFE420004CE01 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 		CE01590F1AF07F2D0072AA88 /* ImageResizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageResizer.m; sourceTree = "<group>"; };
 		CE0159111AF080EF0072AA88 /* GoogleMapsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleMapsService.h; sourceTree = "<group>"; };
 		CE0159121AF080EF0072AA88 /* GoogleMapsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsService.m; sourceTree = "<group>"; };
+		CE44170A1AF15E67007B461F /* AddReminderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReminderDetailViewController.h; sourceTree = "<group>"; };
+		CE44170B1AF15E67007B461F /* AddReminderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReminderDetailViewController.m; sourceTree = "<group>"; };
 		CEDCD7041AEEFE420004CE01 /* SeaD34Mapkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeaD34Mapkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDCD7081AEEFE420004CE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEDCD7091AEEFE420004CE01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 		CEDCD7351AEEFFBE0004CE01 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE44170A1AF15E67007B461F /* AddReminderDetailViewController.h */,
+				CE44170B1AF15E67007B461F /* AddReminderDetailViewController.m */,
 				CEDCD7321AEEFFAD0004CE01 /* MapViewController.h */,
 				CEDCD7331AEEFFAD0004CE01 /* MapViewController.m */,
 			);
@@ -255,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0159101AF07F2D0072AA88 /* ImageResizer.m in Sources */,
+				CE44170C1AF15E67007B461F /* AddReminderDetailViewController.m in Sources */,
 				CE0159131AF080EF0072AA88 /* GoogleMapsService.m in Sources */,
 				CEDCD7341AEEFFAD0004CE01 /* MapViewController.m in Sources */,
 				CEDCD70D1AEEFE420004CE01 /* AppDelegate.m in Sources */,

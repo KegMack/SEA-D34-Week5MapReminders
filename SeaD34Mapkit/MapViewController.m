@@ -67,17 +67,21 @@ int maxGoogleStreetViewImageDimension = 640;
       pinView.animatesDrop = true;
       pinView.pinColor = MKPinAnnotationColorGreen;
       pinView.canShowCallout = true;
-      UIImageView *streetView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, thumbnailDimension, thumbnailDimension)];
 
+      UIButton *streetView = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, thumbnailDimension, thumbnailDimension)];
       [GoogleMapsService fetchImageAtCoordinates:[pinView.annotation coordinate] ofSize:CGSizeMake(thumbnailDimension, thumbnailDimension) completionHandler:^(UIImage *image, NSString *error) {
         if(error) {
           NSLog(@"%@", error);
         } else if(tag == pinView.tag) {
-          streetView.image = image;
+          [streetView setBackgroundImage:image forState:UIControlStateNormal];
         }
       }];
-
       pinView.leftCalloutAccessoryView = streetView;
+      
+        // set tag to 1 to identify it as right callout, for tap/action purposes
+      UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeContactAdd];
+      rightButton.tag = 1;
+      pinView.rightCalloutAccessoryView = rightButton;
       
     } else {
       pinView.annotation = annotation;
@@ -87,22 +91,27 @@ int maxGoogleStreetViewImageDimension = 640;
   return nil;
 }
 
-- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
-  
-  __weak MapViewController *weakSelf = self;
-  
-  [GoogleMapsService fetchImageAtCoordinates:[view.annotation coordinate] ofSize:CGSizeMake(largeImageDimension, largeImageDimension) completionHandler:^(UIImage *image, NSString *error) {
-    if(error) {
-      NSLog(@"%@", error);
-    } else if(image) {
-      UIImageView *largeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, largeImageDimension, largeImageDimension)];
-      weakSelf.largeImageView = largeImageView;
-      weakSelf.largeImageView.image = image;
-      [weakSelf.view addSubview:weakSelf.largeImageView];
-    }
-  }];
-}
 
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+  
+  if(control.tag == 0) {
+    __weak MapViewController *weakSelf = self;
+    
+    [GoogleMapsService fetchImageAtCoordinates:[view.annotation coordinate] ofSize:CGSizeMake(largeImageDimension, largeImageDimension) completionHandler:^(UIImage *image, NSString *error) {
+      if(error) {
+        NSLog(@"%@", error);
+      } else if(image) {
+        UIImageView *largeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, largeImageDimension, largeImageDimension)];
+        weakSelf.largeImageView = largeImageView;
+        weakSelf.largeImageView.image = image;
+        [weakSelf.view addSubview:weakSelf.largeImageView];
+      }
+    }];
+  }
+  else if(control.tag == 1) {
+    [self performSegueWithIdentifier:@"ReminderDetailSegue" sender:self];
+  }
+}
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view didChangeDragState:(MKAnnotationViewDragState)newState fromOldState:(MKAnnotationViewDragState)oldState {
 
