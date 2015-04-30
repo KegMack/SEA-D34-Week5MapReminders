@@ -16,6 +16,7 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
 @property (weak, nonatomic) UIImageView *largeImageView;
+@property (nonatomic) CLLocationCoordinate2D chosenCoords;
 
 @end
 
@@ -38,7 +39,11 @@ int maxGoogleStreetViewImageDimension = 640;
   [self.mapView addGestureRecognizer:longPress];
   
   [self initializeLocationManager];
-  
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(regionAdded:) name:@"RegionAdded" object:nil];
+}
+
+-(void)dealloc {
+  [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)initializeLocationManager {
@@ -78,7 +83,7 @@ int maxGoogleStreetViewImageDimension = 640;
       }];
       pinView.leftCalloutAccessoryView = streetView;
       
-        // set tag to 1 to identify it as right callout, for tap/action purposes
+      // set tag to 1 to differentiate from left callout for tap/action purposes
       UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeContactAdd];
       rightButton.tag = 1;
       pinView.rightCalloutAccessoryView = rightButton;
@@ -94,6 +99,7 @@ int maxGoogleStreetViewImageDimension = 640;
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
   
+  //tag = 0 for left callout
   if(control.tag == 0) {
     __weak MapViewController *weakSelf = self;
     
@@ -108,14 +114,40 @@ int maxGoogleStreetViewImageDimension = 640;
       }
     }];
   }
+  
+  // tag = 1 for right callout
   else if(control.tag == 1) {
+    self.chosenCoords = [view.annotation coordinate];
     [self performSegueWithIdentifier:@"ReminderDetailSegue" sender:self];
   }
 }
 
-- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view didChangeDragState:(MKAnnotationViewDragState)newState fromOldState:(MKAnnotationViewDragState)oldState {
-
+-(void)regionAdded:(NSNotification *)notification {
+  NSDictionary *userInfo = notification.userInfo;
+  CLCircularRegion *region = userInfo[@"region"];
+  MKCircle *circle = [MKCircle circleWithCenterCoordinate:region.center radius:region.radius];
+  [self.mapView addOverlay:circle];
 }
+
+-(MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
+  MKCircleRenderer *circleRenderer = [[MKCircleRenderer alloc] initWithOverlay:overlay];
+  circleRenderer.fillColor = [UIColor redColor];
+  circleRenderer.alpha = 0.3;
+  circleRenderer.strokeColor = [UIColor blackColor];
+  return circleRenderer;
+}
+
+//MARK: CLLocation Delegation
+
+-(void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
+  UILocalNotification *notification = [[UILocalNotification alloc] init];
+  NSLog(@"entered: %@", region.identifier);
+  notification.alertBody = @"Awesome!";
+  notification.alertTitle = [NSString stringWithFormat: @"You are near %@", region.identifier];
+  notification.alertAction = @"region launch";
+  [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+}
+
 
 //MARK: Gesture Actions
 
@@ -132,6 +164,16 @@ int maxGoogleStreetViewImageDimension = 640;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
   self.largeImageView.frame = CGRectMake(0, -largeImageDimension, largeImageDimension, largeImageDimension);
+}
+
+//MARK: Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  if ([segue.identifier isEqual: @"ReminderDetailSegue"]) {
+    AddReminderDetailViewController *destinationVC = segue.destinationViewController;
+    destinationVC.coordinates = self.chosenCoords;
+    destinationVC.locationManager = self.locationManager;
+  }
 }
 
 //MARK: ToolBar actions
@@ -160,7 +202,6 @@ int maxGoogleStreetViewImageDimension = 640;
   MKCoordinateRegion tortugaRegion = MKCoordinateRegionMake(CLLocationCoordinate2DMake(-1.014052, -90.873267), MKCoordinateSpanMake(0.03, 0.03));
   [self.mapView setRegion:tortugaRegion animated:true];
 }
-
 
 
 @end

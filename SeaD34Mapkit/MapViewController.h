@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddReminderDetailViewController.h"
 #import "ImageResizer.h"
 #import "GoogleMapsService.h"
 

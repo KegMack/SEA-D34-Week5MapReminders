@@ -106,8 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				CEDCD7111AEEFE420004CE01 /* Main.storyboard */,
-				CEDCD70B1AEEFE420004CE01 /* AppDelegate.h */,
-				CEDCD70C1AEEFE420004CE01 /* AppDelegate.m */,
 				CEDCD7351AEEFFBE0004CE01 /* ViewControllers */,
 				CE01590A1AF078AB0072AA88 /* Models */,
 				CEDCD7141AEEFE420004CE01 /* Images.xcassets */,
@@ -150,6 +148,8 @@
 				CE44170B1AF15E67007B461F /* AddReminderDetailViewController.m */,
 				CEDCD7321AEEFFAD0004CE01 /* MapViewController.h */,
 				CEDCD7331AEEFFAD0004CE01 /* MapViewController.m */,
+				CEDCD70B1AEEFE420004CE01 /* AppDelegate.h */,
+				CEDCD70C1AEEFE420004CE01 /* AppDelegate.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
