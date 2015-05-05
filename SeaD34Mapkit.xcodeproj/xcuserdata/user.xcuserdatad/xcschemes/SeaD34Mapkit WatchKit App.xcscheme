@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0630"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CEC2B0061AF3F55A00E95AF7"
+               BuildableName = "SeaD34Mapkit WatchKit App.app"
+               BlueprintName = "SeaD34Mapkit WatchKit App"
+               ReferencedContainer = "container:SeaD34Mapkit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CEDCD7031AEEFE420004CE01"
+               BuildableName = "SeaD34Mapkit.app"
+               BlueprintName = "SeaD34Mapkit"
+               ReferencedContainer = "container:SeaD34Mapkit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CEC2AFF71AF3F55A00E95AF7"
+               BuildableName = "SeaD34Mapkit WatchKit Extension.appex"
+               BlueprintName = "SeaD34Mapkit WatchKit Extension"
+               ReferencedContainer = "container:SeaD34Mapkit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CEC2B0061AF3F55A00E95AF7"
+            BuildableName = "SeaD34Mapkit WatchKit App.app"
+            BlueprintName = "SeaD34Mapkit WatchKit App"
+            ReferencedContainer = "container:SeaD34Mapkit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/SeaD34Mapkit">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CEC2B0061AF3F55A00E95AF7"
+            BuildableName = "SeaD34Mapkit WatchKit App.app"
+            BlueprintName = "SeaD34Mapkit WatchKit App"
+            ReferencedContainer = "container:SeaD34Mapkit.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CEC2B0061AF3F55A00E95AF7"
+            BuildableName = "SeaD34Mapkit WatchKit App.app"
+            BlueprintName = "SeaD34Mapkit WatchKit App"
+            ReferencedContainer = "container:SeaD34Mapkit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/SeaD34Mapkit">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CEC2B0061AF3F55A00E95AF7"
+            BuildableName = "SeaD34Mapkit WatchKit App.app"
+            BlueprintName = "SeaD34Mapkit WatchKit App"
+            ReferencedContainer = "container:SeaD34Mapkit.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CEC2B0061AF3F55A00E95AF7"
+            BuildableName = "SeaD34Mapkit WatchKit App.app"
+            BlueprintName = "SeaD34Mapkit WatchKit App"
+            ReferencedContainer = "container:SeaD34Mapkit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

@@ -10,6 +10,15 @@
 		CE0159101AF07F2D0072AA88 /* ImageResizer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01590F1AF07F2D0072AA88 /* ImageResizer.m */; };
 		CE0159131AF080EF0072AA88 /* GoogleMapsService.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0159121AF080EF0072AA88 /* GoogleMapsService.m */; };
 		CE44170C1AF15E67007B461F /* AddReminderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE44170B1AF15E67007B461F /* AddReminderDetailViewController.m */; };
+		CE9E62231AF7DF44008A347F /* RegionRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D4A901AF68D220080069A /* RegionRowController.m */; };
+		CE9E62261AF7E940008A347F /* MapInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9E62251AF7E93F008A347F /* MapInterfaceController.m */; };
+		CEC2AFFF1AF3F55A00E95AF7 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC2AFFE1AF3F55A00E95AF7 /* InterfaceController.m */; };
+		CEC2B0021AF3F55A00E95AF7 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC2B0011AF3F55A00E95AF7 /* NotificationController.m */; };
+		CEC2B0041AF3F55A00E95AF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC2B0031AF3F55A00E95AF7 /* Images.xcassets */; };
+		CEC2B0081AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = CEC2B0071AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit App.app */; };
+		CEC2B0101AF3F55A00E95AF7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC2B00E1AF3F55A00E95AF7 /* Interface.storyboard */; };
+		CEC2B0121AF3F55A00E95AF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC2B0111AF3F55A00E95AF7 /* Images.xcassets */; };
+		CEC2B0151AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEC2AFF81AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CEDCD70A1AEEFE420004CE01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDCD7091AEEFE420004CE01 /* main.m */; };
 		CEDCD70D1AEEFE420004CE01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDCD70C1AEEFE420004CE01 /* AppDelegate.m */; };
 		CEDCD7131AEEFE420004CE01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDCD7111AEEFE420004CE01 /* Main.storyboard */; };
@@ -21,6 +30,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CEC2B0091AF3F55A00E95AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDCD6FC1AEEFE420004CE01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC2B0061AF3F55A00E95AF7;
+			remoteInfo = "SeaD34Mapkit WatchKit App";
+		};
+		CEC2B0131AF3F55A00E95AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDCD6FC1AEEFE420004CE01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC2AFF71AF3F55A00E95AF7;
+			remoteInfo = "SeaD34Mapkit WatchKit Extension";
+		};
 		CEDCD71E1AEEFE430004CE01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEDCD6FC1AEEFE420004CE01 /* Project object */;
@@ -30,6 +53,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CEC2B01C1AF3F55A00E95AF7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CEC2B0151AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		CE01590E1AF07F2D0072AA88 /* ImageResizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageResizer.h; sourceTree = "<group>"; };
 		CE01590F1AF07F2D0072AA88 /* ImageResizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageResizer.m; sourceTree = "<group>"; };
@@ -37,6 +74,22 @@
 		CE0159121AF080EF0072AA88 /* GoogleMapsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsService.m; sourceTree = "<group>"; };
 		CE44170A1AF15E67007B461F /* AddReminderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReminderDetailViewController.h; sourceTree = "<group>"; };
 		CE44170B1AF15E67007B461F /* AddReminderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReminderDetailViewController.m; sourceTree = "<group>"; };
+		CE9D4A8F1AF68D220080069A /* RegionRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegionRowController.h; path = "../SeaD34Mapkit WatchKit App/RegionRowController.h"; sourceTree = "<group>"; };
+		CE9D4A901AF68D220080069A /* RegionRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegionRowController.m; path = "../SeaD34Mapkit WatchKit App/RegionRowController.m"; sourceTree = "<group>"; };
+		CE9E62241AF7E93F008A347F /* MapInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapInterfaceController.h; sourceTree = "<group>"; };
+		CE9E62251AF7E93F008A347F /* MapInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapInterfaceController.m; sourceTree = "<group>"; };
+		CEC2AFF81AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SeaD34Mapkit WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC2AFFB1AF3F55A00E95AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC2AFFC1AF3F55A00E95AF7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CEC2AFFD1AF3F55A00E95AF7 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		CEC2AFFE1AF3F55A00E95AF7 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		CEC2B0001AF3F55A00E95AF7 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		CEC2B0011AF3F55A00E95AF7 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		CEC2B0031AF3F55A00E95AF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CEC2B0071AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeaD34Mapkit WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC2B00D1AF3F55A00E95AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC2B00F1AF3F55A00E95AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CEC2B0111AF3F55A00E95AF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CEDCD7041AEEFE420004CE01 /* SeaD34Mapkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeaD34Mapkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDCD7081AEEFE420004CE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEDCD7091AEEFE420004CE01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,6 +107,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CEC2AFF51AF3F55A00E95AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEDCD7011AEEFE420004CE01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,12 +143,58 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		CEC2AFF91AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE9E62241AF7E93F008A347F /* MapInterfaceController.h */,
+				CE9E62251AF7E93F008A347F /* MapInterfaceController.m */,
+				CEC2AFFD1AF3F55A00E95AF7 /* InterfaceController.h */,
+				CEC2AFFE1AF3F55A00E95AF7 /* InterfaceController.m */,
+				CEC2B0001AF3F55A00E95AF7 /* NotificationController.h */,
+				CEC2B0011AF3F55A00E95AF7 /* NotificationController.m */,
+				CE9D4A8F1AF68D220080069A /* RegionRowController.h */,
+				CE9D4A901AF68D220080069A /* RegionRowController.m */,
+				CEC2B0031AF3F55A00E95AF7 /* Images.xcassets */,
+				CEC2AFFA1AF3F55A00E95AF7 /* Supporting Files */,
+			);
+			path = "SeaD34Mapkit WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		CEC2AFFA1AF3F55A00E95AF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2AFFB1AF3F55A00E95AF7 /* Info.plist */,
+				CEC2AFFC1AF3F55A00E95AF7 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEC2B00B1AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2B00E1AF3F55A00E95AF7 /* Interface.storyboard */,
+				CEC2B0111AF3F55A00E95AF7 /* Images.xcassets */,
+				CEC2B00C1AF3F55A00E95AF7 /* Supporting Files */,
+			);
+			path = "SeaD34Mapkit WatchKit App";
+			sourceTree = "<group>";
+		};
+		CEC2B00C1AF3F55A00E95AF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2B00D1AF3F55A00E95AF7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CEDCD6FB1AEEFE420004CE01 = {
 			isa = PBXGroup;
 			children = (
 				CEDCD72D1AEEFE4D0004CE01 /* MapKit.framework */,
 				CEDCD7061AEEFE420004CE01 /* SeaD34Mapkit */,
 				CEDCD7201AEEFE430004CE01 /* SeaD34MapkitTests */,
+				CEC2AFF91AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit Extension */,
+				CEC2B00B1AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit App */,
 				CEDCD7051AEEFE420004CE01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +204,8 @@
 			children = (
 				CEDCD7041AEEFE420004CE01 /* SeaD34Mapkit.app */,
 				CEDCD71D1AEEFE430004CE01 /* SeaD34MapkitTests.xctest */,
+				CEC2AFF81AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit Extension.appex */,
+				CEC2B0071AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,6 +265,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CEC2AFF71AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC2B01B1AF3F55A00E95AF7 /* Build configuration list for PBXNativeTarget "SeaD34Mapkit WatchKit Extension" */;
+			buildPhases = (
+				CEC2AFF41AF3F55A00E95AF7 /* Sources */,
+				CEC2AFF51AF3F55A00E95AF7 /* Frameworks */,
+				CEC2AFF61AF3F55A00E95AF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEC2B00A1AF3F55A00E95AF7 /* PBXTargetDependency */,
+			);
+			name = "SeaD34Mapkit WatchKit Extension";
+			productName = "SeaD34Mapkit WatchKit Extension";
+			productReference = CEC2AFF81AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		CEC2B0061AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC2B01A1AF3F55A00E95AF7 /* Build configuration list for PBXNativeTarget "SeaD34Mapkit WatchKit App" */;
+			buildPhases = (
+				CEC2B0051AF3F55A00E95AF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SeaD34Mapkit WatchKit App";
+			productName = "SeaD34Mapkit WatchKit App";
+			productReference = CEC2B0071AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		CEDCD7031AEEFE420004CE01 /* SeaD34Mapkit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEDCD7271AEEFE430004CE01 /* Build configuration list for PBXNativeTarget "SeaD34Mapkit" */;
@@ -164,10 +305,12 @@
 				CEDCD7001AEEFE420004CE01 /* Sources */,
 				CEDCD7011AEEFE420004CE01 /* Frameworks */,
 				CEDCD7021AEEFE420004CE01 /* Resources */,
+				CEC2B01C1AF3F55A00E95AF7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CEC2B0141AF3F55A00E95AF7 /* PBXTargetDependency */,
 			);
 			name = SeaD34Mapkit;
 			productName = SeaD34Mapkit;
@@ -201,6 +344,12 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Craig_Chaillie;
 				TargetAttributes = {
+					CEC2AFF71AF3F55A00E95AF7 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					CEC2B0061AF3F55A00E95AF7 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
 					CEDCD7031AEEFE420004CE01 = {
 						CreatedOnToolsVersion = 6.3.1;
 						SystemCapabilities = {
@@ -230,11 +379,31 @@
 			targets = (
 				CEDCD7031AEEFE420004CE01 /* SeaD34Mapkit */,
 				CEDCD71C1AEEFE430004CE01 /* SeaD34MapkitTests */,
+				CEC2AFF71AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit Extension */,
+				CEC2B0061AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CEC2AFF61AF3F55A00E95AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC2B0081AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit App.app in Resources */,
+				CEC2B0041AF3F55A00E95AF7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2B0051AF3F55A00E95AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC2B0101AF3F55A00E95AF7 /* Interface.storyboard in Resources */,
+				CEC2B0121AF3F55A00E95AF7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEDCD7021AEEFE420004CE01 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +424,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CEC2AFF41AF3F55A00E95AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9E62231AF7DF44008A347F /* RegionRowController.m in Sources */,
+				CEC2B0021AF3F55A00E95AF7 /* NotificationController.m in Sources */,
+				CE9E62261AF7E940008A347F /* MapInterfaceController.m in Sources */,
+				CEC2AFFF1AF3F55A00E95AF7 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEDCD7001AEEFE420004CE01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,6 +459,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CEC2B00A1AF3F55A00E95AF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC2B0061AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit App */;
+			targetProxy = CEC2B0091AF3F55A00E95AF7 /* PBXContainerItemProxy */;
+		};
+		CEC2B0141AF3F55A00E95AF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC2AFF71AF3F55A00E95AF7 /* SeaD34Mapkit WatchKit Extension */;
+			targetProxy = CEC2B0131AF3F55A00E95AF7 /* PBXContainerItemProxy */;
+		};
 		CEDCD71F1AEEFE430004CE01 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CEDCD7031AEEFE420004CE01 /* SeaD34Mapkit */;
@@ -287,6 +477,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CEC2B00E1AF3F55A00E95AF7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC2B00F1AF3F55A00E95AF7 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		CEDCD7111AEEFE420004CE01 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -306,6 +504,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CEC2B0161AF3F55A00E95AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SeaD34Mapkit WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CEC2B0171AF3F55A00E95AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SeaD34Mapkit WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CEC2B0181AF3F55A00E95AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = SeaD34Mapkit_WatchKit_Extension;
+				INFOPLIST_FILE = "SeaD34Mapkit WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		CEC2B0191AF3F55A00E95AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = SeaD34Mapkit_WatchKit_Extension;
+				INFOPLIST_FILE = "SeaD34Mapkit WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		CEDCD7251AEEFE430004CE01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -445,6 +699,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CEC2B01A1AF3F55A00E95AF7 /* Build configuration list for PBXNativeTarget "SeaD34Mapkit WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC2B0181AF3F55A00E95AF7 /* Debug */,
+				CEC2B0191AF3F55A00E95AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC2B01B1AF3F55A00E95AF7 /* Build configuration list for PBXNativeTarget "SeaD34Mapkit WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC2B0161AF3F55A00E95AF7 /* Debug */,
+				CEC2B0171AF3F55A00E95AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CEDCD6FF1AEEFE420004CE01 /* Build configuration list for PBXProject "SeaD34Mapkit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

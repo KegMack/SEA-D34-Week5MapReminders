@@ -18,32 +18,44 @@
 @property (weak, nonatomic) UIImageView *largeImageView;
 @property (nonatomic) CLLocationCoordinate2D chosenCoords;
 
+@property (nonatomic) MKCoordinateRegion labyrinthRegion;
+@property (nonatomic) MKCoordinateRegion heartRegion;
+@property (nonatomic) MKCoordinateRegion tortugaRegion;
+
 @end
 
 
 @implementation MapViewController
 
 int thumbnailDimension = 40;
-int largeImageDimension = 640;
+int largeImageDimension = 0;
 int maxGoogleStreetViewImageDimension = 640;
+
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  
+
   largeImageDimension = MIN(self.view.frame.size.width, self.view.frame.size.height);
-  largeImageDimension = MIN(largeImageDimension, maxGoogleStreetViewImageDimension);
-  
   self.mapView.delegate = self;
   self.mapView.mapType = MKMapTypeHybrid;
   UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressAction:)];
   [self.mapView addGestureRecognizer:longPress];
   
   [self initializeLocationManager];
+  [self initializePresetRegions];
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(regionAdded:) name:@"RegionAdded" object:nil];
 }
 
 -(void)dealloc {
   [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)initializePresetRegions {
+  self.labyrinthRegion = MKCoordinateRegionMake(CLLocationCoordinate2DMake(46.164564, 7.028782), MKCoordinateSpanMake(0.0002, 0.0002));
+  
+  self.heartRegion = MKCoordinateRegionMake(CLLocationCoordinate2DMake(-20.937542, 164.658825), MKCoordinateSpanMake(0.001, 0.001));
+  
+  self.tortugaRegion = MKCoordinateRegionMake(CLLocationCoordinate2DMake(-1.014052, -90.873267), MKCoordinateSpanMake(0.03, 0.03));
 }
 
 - (void)initializeLocationManager {
@@ -103,11 +115,15 @@ int maxGoogleStreetViewImageDimension = 640;
   if(control.tag == 0) {
     __weak MapViewController *weakSelf = self;
     
-    [GoogleMapsService fetchImageAtCoordinates:[view.annotation coordinate] ofSize:CGSizeMake(largeImageDimension, largeImageDimension) completionHandler:^(UIImage *image, NSString *error) {
+    int imageDimension = MIN(largeImageDimension, maxGoogleStreetViewImageDimension);
+    [GoogleMapsService fetchImageAtCoordinates:[view.annotation coordinate] ofSize:CGSizeMake(imageDimension, imageDimension) completionHandler:^(UIImage *image, NSString *error) {
       if(error) {
         NSLog(@"%@", error);
       } else if(image) {
         UIImageView *largeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, largeImageDimension, largeImageDimension)];
+        if(imageDimension != largeImageDimension) {
+          [ImageResizer resizeImage:image toSize:CGSizeMake(largeImageDimension, largeImageDimension)];
+        }
         weakSelf.largeImageView = largeImageView;
         weakSelf.largeImageView.image = image;
         [weakSelf.view addSubview:weakSelf.largeImageView];
@@ -146,6 +162,32 @@ int maxGoogleStreetViewImageDimension = 640;
   notification.alertTitle = [NSString stringWithFormat: @"You are near %@", region.identifier];
   notification.alertAction = @"region launch";
   [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+  NSLog(@"Location Manager Error: %@", error);
+  
+  if (error.code == kCLErrorLocationUnknown) {
+    [self displayTemporaryAlert:@"Cannot Determine Location.." forDuration:4.0];
+  }
+  else if (error.code == kCLErrorDenied) {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Location Services Disabled.  Please enable them through your settings." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alertView show];
+  }
+  else if (error.code == kCLErrorNetwork) {
+    [self displayTemporaryAlert:@"Network Error: Cannot determine location." forDuration:3.0];
+  }
+}
+
+- (void)displayTemporaryAlert:(NSString *)message forDuration:(double)timeDelay {
+  UILabel *alertLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 55)];
+  alertLabel.text = message;
+  alertLabel.textAlignment = NSTextAlignmentCenter;
+  alertLabel.backgroundColor = [UIColor blueColor];
+  [self.view addSubview:alertLabel];
+  dispatch_after(dispatch_time(DISPATCH_TIME_NOW, timeDelay * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+    [alertLabel removeFromSuperview];
+  });
 }
 
 
@@ -189,18 +231,15 @@ int maxGoogleStreetViewImageDimension = 640;
 }
 
 - (IBAction)location1Pressed:(UIBarButtonItem *)sender {
-  MKCoordinateRegion labyrinthRegion = MKCoordinateRegionMake(CLLocationCoordinate2DMake(46.164564, 7.028782), MKCoordinateSpanMake(0.0002, 0.0002));
-  [self.mapView setRegion:labyrinthRegion animated:true];
+  [self.mapView setRegion:self.labyrinthRegion animated:true];
 }
 
 - (IBAction)location2Pressed:(UIBarButtonItem *)sender {
-  MKCoordinateRegion heartRegion = MKCoordinateRegionMake(CLLocationCoordinate2DMake(-20.937542, 164.658825), MKCoordinateSpanMake(0.001, 0.001));
-  [self.mapView setRegion:heartRegion animated:true];
+  [self.mapView setRegion:self.heartRegion animated:true];
 }
 
 - (IBAction)location3Pressed:(UIBarButtonItem *)sender {
-  MKCoordinateRegion tortugaRegion = MKCoordinateRegionMake(CLLocationCoordinate2DMake(-1.014052, -90.873267), MKCoordinateSpanMake(0.03, 0.03));
-  [self.mapView setRegion:tortugaRegion animated:true];
+  [self.mapView setRegion:self.tortugaRegion animated:true];
 }
 
 

@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Notification - SeaD34Mapkit WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>SeaD34Mapkit WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>SeaD34Mapkit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>CEC2B0061AF3F55A00E95AF7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>CEDCD7031AEEFE420004CE01</key>
 		<dict>
 			<key>primary</key>
